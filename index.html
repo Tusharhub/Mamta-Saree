@@ -12,12 +12,106 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+
+    <div class="mobile-cta-bar d-lg-none">
+
+        <div class="container-fluid px-0">
+            <div class="row g-0 text-center">
+
+                <!-- Call -->
+                <div class="col-6 border-end">
+                    <a href="tel:" class="mobile-cta-link d-flex align-items-center justify-content-center py-3">
+                        <i class="fas fa-phone me-2"></i>
+                        <span>CALL NOW</span>
+                    </a>
+                </div>
+
+                <!-- WhatsApp -->
+                <div class="col-6">
+                    <a href="" target="_blank"
+                        class="mobile-cta-link whatsapp-link d-flex align-items-center justify-content-center py-3">
+                        <i class="fab fa-whatsapp me-2"></i>
+                        <span>GET HELP</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        /* ===== PREMIUM MOBILE CTA BAR ===== */
+
+        .mobile-cta-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1050;
+            box-shadow: 0 -10px 35px rgba(0, 0, 0, 0.10);
+        }
+
+        /* Remove row margin */
+        .mobile-cta-bar .row {
+            margin: 0;
+        }
+
+        /* Remove Bootstrap link behavior */
+        .mobile-cta-link,
+        .mobile-cta-link:hover,
+        .mobile-cta-link:focus,
+        .mobile-cta-link:active {
+            text-decoration: none !important;
+            color: #fff !important;
+        }
+
+        /* Common Style */
+        .mobile-cta-link {
+            font-weight: 700;
+            font-size: 15px;
+            letter-spacing: 0.6px;
+            transition: all 0.3s ease;
+        }
+
+        /* ===== CALL BUTTON - GOLD ===== */
+        .mobile-cta-bar .col-6:first-child .mobile-cta-link {
+            background: linear-gradient(135deg, #b89b5e, #d4af37);
+        }
+
+        .mobile-cta-bar .col-6:first-child .mobile-cta-link:hover {
+            background: linear-gradient(135deg, #a88945, #caa938);
+            transform: translateY(-2px);
+        }
+
+        /* ===== WHATSAPP BUTTON - GREEN ===== */
+        .whatsapp-link {
+            background: #25D366;
+        }
+
+        .whatsapp-link:hover {
+            background: #1ebe5d;
+            transform: translateY(-2px);
+        }
+
+        /* Icons */
+        .mobile-cta-link i {
+            font-size: 18px;
+            color: #fff !important;
+        }
+
+        /* Prevent content hiding */
+        body {
+            padding-bottom: 70px;
+        }
+    </style>
 
     <!-- ================= NAVBAR ================= -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
@@ -58,11 +152,15 @@
 
     <!-- ================= HERO SECTION ================= -->
     <section class="hero-section">
+        <div class="hero-overlay"></div>
+
         <div class="container">
             <div class="row align-items-center">
 
-                <!-- Left Content -->
-                <div class="col-lg-6 text-center text-lg-start">
+                <!-- LEFT -->
+                <div class="col-lg-6 text-center text-lg-start hero-content">
+
+                    <p class="hero-tag">Since 1989 • Premium Sarees</p>
 
                     <h1 class="hero-title">
                         Timeless Elegance <br>
@@ -75,14 +173,14 @@
                     </p>
 
                     <div class="hero-btns">
-                        <a href="#" class="btn btn-warning px-4 py-2">Shop Collection</a>
-                        <a href="#" class="btn btn-outline-warning px-4 py-2">Explore Heritage</a>
+                        <a href="#" class="btn btn-gold">Shop Collection</a>
+                        <a href="#" class="btn btn-outline-gold">Explore Heritage</a>
                     </div>
 
                 </div>
 
-                <!-- Right Image -->
-                <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                <!-- RIGHT -->
+                <div class="col-lg-6 text-center hero-img-wrap">
                     <img src="image/bg-img.png" class="img-fluid hero-img" alt="Model">
                 </div>
 
@@ -124,7 +222,7 @@
                     </div>
                 </div>
 
-            
+
                 <!-- BOTTOM TEXT -->
                 <div class="bottom-text" data-aos="fade-up">
                     <span class="line"></span>
@@ -152,524 +250,721 @@
 
 
     <!-- ================= CRAFTSMANSHIP SECTION ================= -->
-<section class="craft-section">
+    <section class="craft-section">
 
-    <!-- Overlay -->
-    <div class="overlay"></div>
+        <!-- Overlay -->
+        <div class="overlay"></div>
 
-    <div class="container text-center">
+        <div class="container text-center">
 
-        <!-- Heading -->
-        <h2 class="craft-title">
-            EXQUISITE CRAFTSMANSHIP
-        </h2>
+            <!-- Heading -->
+            <h2 class="craft-title">
+                EXQUISITE CRAFTSMANSHIP
+            </h2>
 
-        <p class="craft-subtitle">
-            Each piece is meticulously crafted by skilled artisans, preserving centuries-old 
-            techniques while embracing modern aesthetics.
-        </p>
+            <p class="craft-subtitle">
+                Each piece is meticulously crafted by skilled artisans, preserving centuries-old
+                techniques while embracing modern aesthetics.
+            </p>
 
-        <!-- Features -->
-        <div class="row mt-5">
+            <!-- Features -->
+            <div class="row mt-5">
 
-            <div class="col-md-4 craft-item">
-                <h4>Hand Embroidery</h4>
-                <p>Intricate designs created with precision and care</p>
-            </div>
+                <div class="col-md-4 craft-item">
+                    <h4>Hand Embroidery</h4>
+                    <p>Intricate designs created with precision and care</p>
+                </div>
 
-            <div class="col-md-4 craft-item">
-                <h4>Natural Dyes</h4>
-                <p>Vibrant colors derived from sustainable sources</p>
-            </div>
+                <div class="col-md-4 craft-item">
+                    <h4>Natural Dyes</h4>
+                    <p>Vibrant colors derived from sustainable sources</p>
+                </div>
 
-            <div class="col-md-4 craft-item">
-                <h4>Handloom Weaving</h4>
-                <p>Traditional techniques passed down through generations</p>
+                <div class="col-md-4 craft-item">
+                    <h4>Handloom Weaving</h4>
+                    <p>Traditional techniques passed down through generations</p>
+                </div>
+
             </div>
 
         </div>
-
-    </div>
-</section>
+    </section>
 
 
-<section class="featured-section">
-    <div class="container">
+    <section class="featured-section">
+        <div class="container">
 
-        <!-- Header -->
-        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
-            <div>
-                <h2 class="section-title">Featured Products</h2>
-                <p class="section-subtitle">
-                    Discover our handpicked selection of premium sarees perfect for any occasion.
+            <!-- Header -->
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+                <div>
+                    <h2 class="section-title">Featured Products</h2>
+                    <p class="section-subtitle">
+                        Discover our handpicked selection of premium sarees perfect for any occasion.
+                    </p>
+                </div>
+                <a href="#" class="view-btn">View All Collection →</a>
+            </div>
+
+            <!-- SCROLL WRAPPER -->
+            <div class="product-scroll">
+                <div class="d-flex gap-4">
+
+                    <!-- CARD 1 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <span class="badge sale">SALE</span>
+                            <div class="product-img">
+                                <img src="image/s1.png" class="img-fluid">
+                            </div>
+                            <div class="product-info">
+                                <div class="title-row">
+                                    <h5>Banarasi Silk Red Saree</h5>
+                                    <i class="fa-regular fa-heart heart-icon"></i>
+                                </div>
+                                <p class="price">₹12,999 <span>₹15,999</span></p>
+                                <div class="btn-group">
+                                    <button class="buy-btn">BUY NOW</button>
+                                    <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <span class="badge new">NEW</span>
+                            <div class="product-img">
+                                <img src="image/s2.png" class="img-fluid">
+                            </div>
+                            <div class="product-info">
+                                <div class="title-row">
+                                    <h5>Kanjivaram Silk Wedding Saree</h5>
+                                    <i class="fa-regular fa-heart heart-icon"></i>
+                                </div>
+                                <p class="price">₹24,999</p>
+                                <div class="btn-group">
+                                    <button class="buy-btn">BUY NOW</button>
+                                    <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <span class="badge sale">SALE</span>
+                            <div class="product-img">
+                                <img src="image/s3.png" class="img-fluid">
+                            </div>
+                            <div class="product-info">
+                                <div class="title-row">
+                                    <h5>Chanderi Cotton Saree</h5>
+                                    <i class="fa-regular fa-heart heart-icon"></i>
+                                </div>
+                                <p class="price">₹5,999 <span>₹7,999</span></p>
+                                <div class="btn-group">
+                                    <button class="buy-btn">BUY NOW</button>
+                                    <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="image/s4.png" class="img-fluid">
+                            </div>
+                            <div class="product-info">
+                                <div class="title-row">
+                                    <h5>Mysore Silk Green Saree</h5>
+                                    <i class="fa-regular fa-heart heart-icon"></i>
+                                </div>
+                                <p class="price">₹8,999</p>
+                                <div class="btn-group">
+                                    <button class="buy-btn">BUY NOW</button>
+                                    <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 5 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="image/s1.png" class="img-fluid">
+                            </div>
+                            <div class="product-info">
+                                <div class="title-row">
+                                    <h5>Organza Designer Saree</h5>
+                                    <i class="fa-regular fa-heart heart-icon"></i>
+                                </div>
+                                <p class="price">₹14,999</p>
+                                <div class="btn-group">
+                                    <button class="buy-btn">BUY NOW</button>
+                                    <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 6 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="image/s2.png" class="img-fluid">
+                            </div>
+                            <div class="product-info">
+                                <div class="title-row">
+                                    <h5>Paithani Silk Saree</h5>
+                                    <i class="fa-regular fa-heart heart-icon"></i>
+                                </div>
+                                <p class="price">₹19,999</p>
+                                <div class="btn-group">
+                                    <button class="buy-btn">BUY NOW</button>
+                                    <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 7 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="image/s3.png" class="img-fluid">
+                            </div>
+                            <div class="product-info">
+                                <div class="title-row">
+                                    <h5>Georgette Party Wear Saree</h5>
+                                    <i class="fa-regular fa-heart heart-icon"></i>
+                                </div>
+                                <p class="price">₹6,999</p>
+                                <div class="btn-group">
+                                    <button class="buy-btn">BUY NOW</button>
+                                    <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 8 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="image/s4.png" class="img-fluid">
+                            </div>
+                            <div class="product-info">
+                                <div class="title-row">
+                                    <h5>Linen Handloom Saree</h5>
+                                    <i class="fa-regular fa-heart heart-icon"></i>
+                                </div>
+                                <p class="price">₹4,999</p>
+                                <div class="btn-group">
+                                    <button class="buy-btn">BUY NOW</button>
+                                    <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="promo-section">
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- LEFT CARD -->
+                <div class="col-lg-6">
+                    <div class="promo-card">
+
+                        <img src="image/of-1.png" alt="">
+
+                        <div class="promo-overlay"></div>
+
+                        <div class="promo-content">
+                            <span class="tag">NEW ARRIVALS</span>
+                            <h2>Festive Season Collection</h2>
+                            <p>Elegant sarees for your most cherished occasions</p>
+                            <a href="#" class="btn-gold">Explore Now</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT CARD -->
+                <div class="col-lg-6">
+                    <div class="promo-card">
+
+                        <img src="image/of-1.png" alt="">
+
+                        <div class="promo-overlay"></div>
+
+                        <div class="promo-content">
+                            <span class="tag red">LIMITED TIME</span>
+                            <h2>Up to 30% Off*</h2>
+                            <p>On selected festive collection sarees</p>
+                            <a href="#" class="btn-outline">Shop Now</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="category-section">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="d-flex justify-content-between align-items-center mb-5 flex-wrap gap-3">
+                <div>
+                    <p class="sub-title">EXQUISITE COLLECTIONS</p>
+                    <h2 class="main-title">Shop By Category</h2>
+                </div>
+                <a href="#" class="view-btn">View All →</a>
+            </div>
+
+            <!-- GRID -->
+            <div class="category-grid">
+
+                <!-- LEFT BIG -->
+                <div class="category-card big" data-aos="fade-up">
+                    <img src="image/s1.png">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h3>Wedding Collection</h3>
+                        <p>Luxurious sarees for your special day</p>
+                        <span>VIEW COLLECTION →</span>
+                    </div>
+                </div>
+
+                <!-- TOP RIGHT -->
+                <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="image/s2.png">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h3>Festive Wear</h3>
+                        <p>Celebrate in style</p>
+                        <span>VIEW COLLECTION →</span>
+                    </div>
+                </div>
+
+                <!-- TOP RIGHT 2 -->
+                <div class="category-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="image/s3.png">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h3>Handloom Collection</h3>
+                        <p>Artisan craftsmanship</p>
+                        <span>VIEW COLLECTION →</span>
+                    </div>
+                </div>
+
+                <!-- BOTTOM FULL -->
+                <div class="category-card wide" data-aos="fade-up" data-aos-delay="400">
+                    <img src="image/s4.png">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h3>Casual Wear Collection</h3>
+                        <p>Comfort meets elegance</p>
+                        <span>VIEW COLLECTION →</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container text-center">
+
+            <p class="sub-title">TESTIMONIALS</p>
+            <h2 class="main-title">What Our Customers Say</h2>
+
+            <!-- GOOGLE STYLE RATING -->
+            <div class="google-rating d-flex align-items-center justify-content-center gap-2 flex-wrap">
+
+                <!-- Google Logo -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="google-logo">
+
+                <!-- Stars -->
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+
+                <!-- Text -->
+                <span class="rating-text">4.2 Rating</span>
+                <span class="divider">|</span>
+                <span class="review-count">250+ Reviews</span>
+
+            </div>
+
+            <div class="row g-4 mt-4">
+
+                <!-- 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="review-card">
+                        <div class="review-top">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                class="g-logo">
+                            <div class="stars">⭐⭐⭐⭐☆</div>
+                        </div>
+                        <p>“Absolutely loved the quality! The saree felt premium and elegant.”</p>
+                        <div class="review-footer">
+                            <div class="avatar">P</div>
+                            <div>
+                                <h6>Priya Sharma</h6>
+                                <small>Delhi • 1 week ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="review-card">
+                        <div class="review-top">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                class="g-logo">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <p>“Fast delivery and amazing fabric. Perfect for festive wear.”</p>
+                        <div class="review-footer">
+                            <div class="avatar">A</div>
+                            <div>
+                                <h6>Ananya Patel</h6>
+                                <small>Mumbai • 2 weeks ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="review-card">
+                        <div class="review-top">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                class="g-logo">
+                            <div class="stars">⭐⭐⭐⭐☆</div>
+                        </div>
+                        <p>“The saree design is unique and I got so many compliments!”</p>
+                        <div class="review-footer">
+                            <div class="avatar">M</div>
+                            <div>
+                                <h6>Meera Reddy</h6>
+                                <small>Bangalore • 1 week ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="review-card">
+                        <div class="review-top">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                class="g-logo">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <p>“Excellent craftsmanship and finishing. Worth every penny.”</p>
+                        <div class="review-footer">
+                            <div class="avatar">S</div>
+                            <div>
+                                <h6>Sneha Kapoor</h6>
+                                <small>Chandigarh • 3 weeks ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="review-card">
+                        <div class="review-top">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                class="g-logo">
+                            <div class="stars">⭐⭐⭐⭐☆</div>
+                        </div>
+                        <p>“Fabric quality is top-notch. Feels very luxurious.”</p>
+                        <div class="review-footer">
+                            <div class="avatar">R</div>
+                            <div>
+                                <h6>Ritika Jain</h6>
+                                <small>Jaipur • 2 weeks ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="review-card">
+                        <div class="review-top">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                class="g-logo">
+                            <div class="stars">⭐⭐⭐⭐☆</div>
+                        </div>
+                        <p>“The color and fabric quality exceeded my expectations. Looks even better in real.”</p>
+                        <div class="review-footer">
+                            <div class="avatar">R</div>
+                            <div>
+                                <h6>Riya Malhotra</h6>
+                                <small>Delhi • 2 weeks ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="review-card">
+                        <div class="review-top">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                class="g-logo">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <p>“Very elegant collection. I wore it to a wedding and got so many compliments.”</p>
+                        <div class="review-footer">
+                            <div class="avatar">N</div>
+                            <div>
+                                <h6>Neha Verma</h6>
+                                <small>Lucknow • 1 week ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="review-card">
+                        <div class="review-top">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                class="g-logo">
+                            <div class="stars">⭐⭐⭐⭐☆</div>
+                        </div>
+                        <p>“Good quality saree with fine detailing. Worth the price.”</p>
+                        <div class="review-footer">
+                            <div class="avatar">T</div>
+                            <div>
+                                <h6>Tanvi Shah</h6>
+                                <small>Ahmedabad • 3 weeks ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="review-card">
+                        <div class="review-top">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                class="g-logo">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <p>“Amazing shopping experience. The saree looked premium and delivery was quick.”</p>
+                        <div class="review-footer">
+                            <div class="avatar">S</div>
+                            <div>
+                                <h6>Shreya Iyer</h6>
+                                <small>Chennai • 1 week ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="map-about-section">
+        <div class="container">
+
+            <div class="row align-items-center g-4">
+
+                <!-- LEFT: MAP -->
+                <div class="col-lg-6">
+                    <div class="map-box">
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.795778686399!2d77.0983472741119!3d28.605902785292063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b55de1d1bed%3A0xccd50e0f75e8ef30!2sMamta%20Saree!5e0!3m2!1sen!2sin!4v1774261882931!5m2!1sen!2sin"
+                            loading="lazy" allowfullscreen>
+                        </iframe>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT: CONTENT -->
+                <div class="col-lg-6">
+
+                    <div class="about-content">
+
+                        <p class="about-tag">Since 1989 • Janakpuri West</p>
+
+                        <h2 class="about-title">
+                            Mamta Saree – Premium Ethnic Wear Store
+                        </h2>
+
+                        <p class="about-desc">
+                            Mamta Saree is one of the most trusted and premium ethnic wear stores
+                            in Janakpuri West, known for its exquisite saree collections and
+                            timeless craftsmanship. With a legacy since 1989, we have been
+                            delivering elegance, quality, and tradition to thousands of happy customers.
+                        </p>
+
+                        <p class="about-desc">
+                            From wedding collections to festive and designer sarees, every piece
+                            reflects luxury and attention to detail, making your every occasion special.
+                        </p>
+
+                        <!-- TRUST LINE -->
+                        <p class="about-trust">
+                            📍 Verified Store • 4.2★ Rating • 250+ Reviews
+                        </p>
+
+                        <!-- BUTTON -->
+                        <a href="https://maps.google.com/?q=Mamta+Saree" target="_blank" class="btn-gold">
+                            Get Directions →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <div class="footer-bg-wrapper">
+
+        <!-- CTA SECTION -->
+        <section class="cta-section">
+            <div class="cta-overlay"></div>
+
+            <div class="container text-center">
+                <h2>Looking For a Custom Designer Saree?</h2>
+
+                <p>
+                    If you're looking for custom designer sarees, you've come to the right place!
+                    Explore our stunning range of handmade sarees, tailored to your style.
                 </p>
+
+                <a href="#" class="btn-gold">Contact Us</a>
             </div>
-            <a href="#" class="view-btn">View All Collection →</a>
-        </div>
+        </section>
 
-        <!-- SCROLL WRAPPER -->
-        <div class="product-scroll">
-            <div class="d-flex gap-4">
 
-                <!-- CARD 1 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <span class="badge sale">SALE</span>
-                        <div class="product-img">
-                            <img src="image/s1.png" class="img-fluid">
-                        </div>
-                        <div class="product-info">
-                            <div class="title-row">
-                                <h5>Banarasi Silk Red Saree</h5>
-                                <i class="fa-regular fa-heart heart-icon"></i>
-                            </div>
-                            <p class="price">₹12,999 <span>₹15,999</span></p>
-                            <div class="btn-group">
-                                <button class="buy-btn">BUY NOW</button>
-                                <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- CARD 2 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <span class="badge new">NEW</span>
-                        <div class="product-img">
-                            <img src="image/s2.png" class="img-fluid">
-                        </div>
-                        <div class="product-info">
-                            <div class="title-row">
-                                <h5>Kanjivaram Silk Wedding Saree</h5>
-                                <i class="fa-regular fa-heart heart-icon"></i>
-                            </div>
-                            <p class="price">₹24,999</p>
-                            <div class="btn-group">
-                                <button class="buy-btn">BUY NOW</button>
-                                <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
-                            </div>
+
+
+        <!-- FOOTER -->
+        <footer class="footer-section">
+
+            <div class="container">
+
+                <div class="row g-4">
+
+                    <!-- BRAND -->
+                    <div class="col-lg-4 col-md-6">
+
+                        <h3 class="footer-logo">
+                            Mamta Saree
+                            <span class="since-footer">Since 1989</span>
+                        </h3>
+
+                        <p>
+                            Elegance woven into every thread. Discover our collection of premium sarees
+                            crafted for your most special occasions.
+                        </p>
+
+                        <div class="social-icons d-flex gap-3">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
                         </div>
                     </div>
-                </div>
 
-                <!-- CARD 3 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <span class="badge sale">SALE</span>
-                        <div class="product-img">
-                            <img src="image/s3.png" class="img-fluid">
-                        </div>
-                        <div class="product-info">
-                            <div class="title-row">
-                                <h5>Chanderi Cotton Saree</h5>
-                                <i class="fa-regular fa-heart heart-icon"></i>
-                            </div>
-                            <p class="price">₹5,999 <span>₹7,999</span></p>
-                            <div class="btn-group">
-                                <button class="buy-btn">BUY NOW</button>
-                                <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
-                            </div>
-                        </div>
+                    <!-- QUICK LINKS -->
+                    <div class="col-lg-4 col-md-6">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Collections</a></li>
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Sale</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
                     </div>
-                </div>
 
-                <!-- CARD 4 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="image/s4.png" class="img-fluid">
-                        </div>
-                        <div class="product-info">
-                            <div class="title-row">
-                                <h5>Mysore Silk Green Saree</h5>
-                                <i class="fa-regular fa-heart heart-icon"></i>
-                            </div>
-                            <p class="price">₹8,999</p>
-                            <div class="btn-group">
-                                <button class="buy-btn">BUY NOW</button>
-                                <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 5 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="image/s1.png" class="img-fluid">
-                        </div>
-                        <div class="product-info">
-                            <div class="title-row">
-                                <h5>Organza Designer Saree</h5>
-                                <i class="fa-regular fa-heart heart-icon"></i>
-                            </div>
-                            <p class="price">₹14,999</p>
-                            <div class="btn-group">
-                                <button class="buy-btn">BUY NOW</button>
-                                <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 6 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="image/s2.png" class="img-fluid">
-                        </div>
-                        <div class="product-info">
-                            <div class="title-row">
-                                <h5>Paithani Silk Saree</h5>
-                                <i class="fa-regular fa-heart heart-icon"></i>
-                            </div>
-                            <p class="price">₹19,999</p>
-                            <div class="btn-group">
-                                <button class="buy-btn">BUY NOW</button>
-                                <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 7 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="image/s3.png" class="img-fluid">
-                        </div>
-                        <div class="product-info">
-                            <div class="title-row">
-                                <h5>Georgette Party Wear Saree</h5>
-                                <i class="fa-regular fa-heart heart-icon"></i>
-                            </div>
-                            <p class="price">₹6,999</p>
-                            <div class="btn-group">
-                                <button class="buy-btn">BUY NOW</button>
-                                <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 8 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="image/s4.png" class="img-fluid">
-                        </div>
-                        <div class="product-info">
-                            <div class="title-row">
-                                <h5>Linen Handloom Saree</h5>
-                                <i class="fa-regular fa-heart heart-icon"></i>
-                            </div>
-                            <p class="price">₹4,999</p>
-                            <div class="btn-group">
-                                <button class="buy-btn">BUY NOW</button>
-                                <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-<section class="promo-section">
-    <div class="container">
-
-        <div class="row g-4">
-
-            <!-- LEFT CARD -->
-            <div class="col-lg-6">
-                <div class="promo-card">
-
-                    <img src="image/of-1.png" alt="">
-
-                    <div class="promo-overlay"></div>
-
-                    <div class="promo-content">
-                        <span class="tag">NEW ARRIVALS</span>
-                        <h2>Festive Season Collection</h2>
-                        <p>Elegant sarees for your most cherished occasions</p>
-                        <a href="#" class="btn-gold">Explore Now</a>
+                    <!-- CUSTOMER SERVICE -->
+                    <div class="col-lg-4 col-md-6">
+                        <h5>Customer Service</h5>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Shipping & Returns</a></li>
+                            <li><a href="#">Size Guide</a></li>
+                            <li><a href="#">Track Order</a></li>
+                        </ul>
                     </div>
 
                 </div>
+
             </div>
 
-            <!-- RIGHT CARD -->
-            <div class="col-lg-6">
-                <div class="promo-card">
+            <!-- BOTTOM BAR -->
+            <div class="footer-bottom">
 
-                    <img src="image/of-1.png" alt="">
+                <div class="container d-flex justify-content-between flex-wrap gap-3 align-items-center">
 
-                    <div class="promo-overlay"></div>
+                    <p>© <span id="year"></span> Mamta Saree. All rights reserved.</p>
 
-                    <div class="promo-content">
-                        <span class="tag red">LIMITED TIME</span>
-                        <h2>Up to 30% Off*</h2>
-                        <p>On selected festive collection sarees</p>
-                        <a href="#" class="btn-outline">Shop Now</a>
+                    <!-- PAYMENT ICONS -->
+                    <div class="payments d-flex align-items-center">
+                        <img src="https://img.icons8.com/color/48/visa.png" />
+                        <img src="https://img.icons8.com/color/48/mastercard.png" />
+                        <img src="https://img.icons8.com/color/48/paypal.png" />
+                        <img src="https://img.icons8.com/color/48/google-pay.png" />
+                    </div>
+
+                    <div class="footer-links d-flex flex-wrap">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Refund Policy</a>
                     </div>
 
                 </div>
+
             </div>
 
-        </div>
+        </footer>
 
     </div>
-</section>
-
-<section class="category-section">
-    <div class="container">
-
-        <!-- Header -->
-        <div class="d-flex justify-content-between align-items-center mb-5 flex-wrap gap-3">
-            <div>
-                <p class="sub-title">EXQUISITE COLLECTIONS</p>
-                <h2 class="main-title">Shop By Category</h2>
-            </div>
-            <a href="#" class="view-btn">View All →</a>
-        </div>
-
-        <!-- GRID -->
-        <div class="category-grid">
-
-            <!-- LEFT BIG -->
-            <div class="category-card big" data-aos="fade-up">
-                <img src="image/s1.png">
-                <div class="overlay"></div>
-                <div class="content">
-                    <h3>Wedding Collection</h3>
-                    <p>Luxurious sarees for your special day</p>
-                    <span>VIEW COLLECTION →</span>
-                </div>
-            </div>
-
-            <!-- TOP RIGHT -->
-            <div class="category-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="image/s2.png">
-                <div class="overlay"></div>
-                <div class="content">
-                    <h3>Festive Wear</h3>
-                    <p>Celebrate in style</p>
-                    <span>VIEW COLLECTION →</span>
-                </div>
-            </div>
-
-            <!-- TOP RIGHT 2 -->
-            <div class="category-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="image/s3.png">
-                <div class="overlay"></div>
-                <div class="content">
-                    <h3>Handloom Collection</h3>
-                    <p>Artisan craftsmanship</p>
-                    <span>VIEW COLLECTION →</span>
-                </div>
-            </div>
-
-            <!-- BOTTOM FULL -->
-            <div class="category-card wide" data-aos="fade-up" data-aos-delay="400">
-                <img src="image/s4.png">
-                <div class="overlay"></div>
-                <div class="content">
-                    <h3>Casual Wear Collection</h3>
-                    <p>Comfort meets elegance</p>
-                    <span>VIEW COLLECTION →</span>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<section class="testimonial-section">
-    <div class="container text-center">
-
-        <p class="sub-title">TESTIMONIALS</p>
-        <h2 class="main-title">What Our Customers Say</h2>
-
-        <!-- GOOGLE STYLE RATING -->
-        <div class="google-rating d-flex align-items-center justify-content-center gap-2 flex-wrap">
-
-    <!-- Google Logo -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
-         class="google-logo">
-
-    <!-- Stars -->
-    <div class="stars">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-regular fa-star-half-stroke"></i>
-    </div>
-
-    <!-- Text -->
-    <span class="rating-text">4.2 Rating</span>
-    <span class="divider">|</span>
-    <span class="review-count">250+ Reviews</span>
-
-</div>
-
-        <div class="row g-4 mt-4">
-
-           <!-- 1 -->
-    <div class="col-lg-3 col-md-6">
-        <div class="review-card">
-            <div class="review-top">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="g-logo">
-                <div class="stars">⭐⭐⭐⭐☆</div>
-            </div>
-            <p>“Absolutely loved the quality! The saree felt premium and elegant.”</p>
-            <div class="review-footer">
-                <div class="avatar">P</div>
-                <div>
-                    <h6>Priya Sharma</h6>
-                    <small>Delhi • 1 week ago</small>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 2 -->
-    <div class="col-lg-3 col-md-6">
-        <div class="review-card">
-            <div class="review-top">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="g-logo">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-            </div>
-            <p>“Fast delivery and amazing fabric. Perfect for festive wear.”</p>
-            <div class="review-footer">
-                <div class="avatar">A</div>
-                <div>
-                    <h6>Ananya Patel</h6>
-                    <small>Mumbai • 2 weeks ago</small>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 3 -->
-    <div class="col-lg-3 col-md-6">
-        <div class="review-card">
-            <div class="review-top">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="g-logo">
-                <div class="stars">⭐⭐⭐⭐☆</div>
-            </div>
-            <p>“The saree design is unique and I got so many compliments!”</p>
-            <div class="review-footer">
-                <div class="avatar">M</div>
-                <div>
-                    <h6>Meera Reddy</h6>
-                    <small>Bangalore • 1 week ago</small>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 4 -->
-    <div class="col-lg-3 col-md-6">
-        <div class="review-card">
-            <div class="review-top">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="g-logo">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-            </div>
-            <p>“Excellent craftsmanship and finishing. Worth every penny.”</p>
-            <div class="review-footer">
-                <div class="avatar">S</div>
-                <div>
-                    <h6>Sneha Kapoor</h6>
-                    <small>Chandigarh • 3 weeks ago</small>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 5 -->
-    <div class="col-lg-3 col-md-6">
-        <div class="review-card">
-            <div class="review-top">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="g-logo">
-                <div class="stars">⭐⭐⭐⭐☆</div>
-            </div>
-            <p>“Fabric quality is top-notch. Feels very luxurious.”</p>
-            <div class="review-footer">
-                <div class="avatar">R</div>
-                <div>
-                    <h6>Ritika Jain</h6>
-                    <small>Jaipur • 2 weeks ago</small>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 6 -->
-    <div class="col-lg-3 col-md-6">
-        <div class="review-card">
-            <div class="review-top">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="g-logo">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-            </div>
-            <p>“Packaging was beautiful and delivery was super fast.”</p>
-            <div class="review-footer">
-                <div class="avatar">K</div>
-                <div>
-                    <h6>Kavya Nair</h6>
-                    <small>Kochi • 1 week ago</small>
-                </div>
-            </div>
-        </div>
-    </div>
-
-       <div class="col-lg-3 col-md-6">
-        <div class="review-card">
-            <div class="review-top">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="g-logo">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-            </div>
-            <p>“Packaging was beautiful and delivery was super fast.”</p>
-            <div class="review-footer">
-                <div class="avatar">K</div>
-                <div>
-                    <h6>Kavya Nair</h6>
-                    <small>Kochi • 1 week ago</small>
-                </div>
-            </div>
-        </div>
-    </div>
-       <div class="col-lg-3 col-md-6">
-        <div class="review-card">
-            <div class="review-top">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="g-logo">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-            </div>
-            <p>“Packaging was beautiful and delivery was super fast.”</p>
-            <div class="review-footer">
-                <div class="avatar">K</div>
-                <div>
-                    <h6>Kavya Nair</h6>
-                    <small>Kochi • 1 week ago</small>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-        </div>
-
-    </div>
-</section>
-
-
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
