@@ -90,43 +90,52 @@
     </a>
     <style>
         .float-btn {
-    position: fixed;
-    left: 10px;
-    bottom: 55px;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 24px;
-    z-index: 999;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
+            position: fixed;
+            left: 10px;
+            bottom: 55px;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+            z-index: 999;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
 
-    /* 🔥 Bounce Animation */
-    animation: bounce 2s infinite;
-}
+            /* 🔥 Bounce Animation */
+            animation: bounce 2s infinite;
+        }
 
-/* KEYFRAMES */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
-}
+        /* KEYFRAMES */
+        @keyframes bounce {
 
-/* OPTIONAL: HOVER EFFECT */
-.float-btn:hover {
-    transform: scale(1.1);
-    animation: none; /* stop bounce on hover */
-}
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* OPTIONAL: HOVER EFFECT */
+        .float-btn:hover {
+            transform: scale(1.1);
+            animation: none;
+            /* stop bounce on hover */
+        }
+
         /* Instagram Gradient */
         .insta-btn {
             background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #4f5bd5);
@@ -142,10 +151,10 @@
 
         <div class="container-fluid px-0">
             <div class="row g-0 text-center">
-
                 <!-- Call -->
                 <div class="col-6 border-end">
-                    <a href="tel:" class="mobile-cta-link d-flex align-items-center justify-content-center py-3">
+                    <a href="tel:+919654547064"
+                        class="mobile-cta-link d-flex align-items-center justify-content-center py-3">
                         <i class="fas fa-phone me-2"></i>
                         <span>CALL NOW</span>
                     </a>
@@ -153,7 +162,8 @@
 
                 <!-- WhatsApp -->
                 <div class="col-6">
-                    <a href="" target="_blank"
+                    <a href="https://wa.me/919654547064?text=Hi%2C%20I%20need%20help%20regarding%20your%20collection."
+                        target="_blank"
                         class="mobile-cta-link whatsapp-link d-flex align-items-center justify-content-center py-3">
                         <i class="fab fa-whatsapp me-2"></i>
                         <span>GET HELP</span>
@@ -227,158 +237,160 @@
     </style>
 
     <!-- ================= NAVBAR ================= -->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
+        <div class="container">
 
-        <!-- LOGO (IMAGE) -->
-        <a class="navbar-brand" href="#">
-            <img src="image/logo.png" alt="Mamta Saree" class="logo-img">
-        </a>
+            <!-- LOGO (IMAGE) -->
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.png" alt="Mamta Saree" class="logo-img">
+            </a>
 
-        <!-- Toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <!-- Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- Menu -->
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Browse Categories</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">New Arrivals</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Sale</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-            </ul>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Browse Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">New Arrivals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sale</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                </ul>
 
-            <!-- Right Icons -->
-            <div class="d-flex align-items-center gap-3">
-                <i class="fa-regular fa-heart icon"></i>
-                <i class="fa-solid fa-cart-shopping icon"></i>
-                <i class="fa-regular fa-user icon"></i>
+                <!-- Right Icons -->
+                <div class="d-flex align-items-center gap-3">
+                    <i class="fa-regular fa-heart icon"></i>
+                    <i class="fa-solid fa-cart-shopping icon"></i>
+                    <i class="fa-regular fa-user icon"></i>
+                </div>
             </div>
-        </div>
 
-    </div>
-</nav>
+        </div>
+    </nav>
 
 
     <!-- ================= HERO SECTION ================= -->
-   <section class="hero-section">
-    <div class="hero-overlay"></div>
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
 
-    <div class="container">
-        <div class="row align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
 
-            <!-- LEFT -->
-            <div class="col-lg-6 hero-content">
+                <!-- LEFT -->
+                <div class="col-lg-6 hero-content">
 
-                <p class="hero-tag">Since 1989 • Mamta Saree Legacy</p>
+                    <p class="hero-tag">Since 1989 • Mamta Saree Legacy</p>
 
-                <h1 class="hero-title">
-                    Redefining Grace <br>
-                    in <span>Every Drape</span>
-                </h1>
+                    <h1 class="hero-title">
+                        Redefining Grace <br>
+                        in <span>Every Drape</span>
+                    </h1>
 
-                <p class="hero-desc">
-                    Step into the world of <strong>Mamta Saree</strong>, where every thread tells a story of
-                    heritage, craftsmanship, and luxury. Our sarees are curated for women who value
-                    elegance, tradition, and timeless beauty.
-                </p>
+                    <p class="hero-desc">
+                        Step into the world of <strong>Mamta Saree</strong>, where every thread tells a story of
+                        heritage, craftsmanship, and luxury. Our sarees are curated for women who value
+                        elegance, tradition, and timeless beauty.
+                    </p>
 
-                <!-- EXTRA PREMIUM TEXT -->
-                <p class="hero-sub">
-                    ✨ Handcrafted Designs | Premium Fabrics | Wedding & Occasion Wear  
-                    💎 Trusted by 10,000+ Happy Clients Across India
-                </p>
+                    <!-- EXTRA PREMIUM TEXT -->
+                    <p class="hero-sub">
+                        ✨ Handcrafted Designs | Premium Fabrics | Wedding & Occasion Wear
+                        💎 Trusted by 10,000+ Happy Clients Across India
+                    </p>
 
-                <div class="hero-btns center">
-                <div class="hero-btns">
-    <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20your%20collection"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn-gold">
-        Explore Collection
-    </a>
+                    <div class="hero-btns center">
+                        <div class="hero-btns">
+                            <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20your%20collection"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+                                Explore Collection
+                            </a>
 
-    <a href="https://www.instagram.com/mamtasareegandhimarket" class="btn btn-gold" style="background: #000; color: #fff;">
-        Discover Heritage
-    </a>
-</div>
+                            <a href="https://www.instagram.com/mamtasareegandhimarket" class="btn btn-gold"
+                                style="background: #000; color: #fff;">
+                                Discover Heritage
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="col-lg-6 hero-img-wrap">
+                    <div class="image-glow"></div>
+                    <img src="image/bg-img.png" class="img-fluid hero-img" alt="">
                 </div>
 
             </div>
-
-            <!-- RIGHT IMAGE -->
-            <div class="col-lg-6 hero-img-wrap">
-                <div class="image-glow"></div>
-                <img src="image/bg-img.png" class="img-fluid hero-img" alt="">
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- ================= CATEGORY SECTION ================= -->
     <!-- ================= PREMIUM CATEGORY SECTION ================= -->
-   <section class="premium-section">
-    <div class="container">
+    <section class="premium-section">
+        <div class="container">
 
-        <!-- Top Offer -->
-        <div class="top-offer text-center" data-aos="fade-down">
-            ✨ Exclusive Mamta Saree Collection | Flat 30% Off for Limited Time ✨
-        </div>
-
-        <div class="premium-grid">
-
-            <!-- LEFT IMAGE -->
-            <div class="left-img" data-aos="fade-right">
-                <div class="img-box">
-                    <img src="image/offer-1.jpeg" alt="">
-                </div>
+            <!-- Top Offer -->
+            <div class="top-offer text-center" data-aos="fade-down">
+                ✨ Upgrade Your Wardrobe with Mamta Saree’s Exclusive Collection✨
             </div>
 
-            <!-- RIGHT TEXT -->
-            <div class="right-text" data-aos="fade-left">
-                <div class="text-wrapper">
+            <div class="premium-grid">
+
+                <!-- LEFT IMAGE -->
+                <div class="left-img" data-aos="fade-right">
+                    <div class="img-box">
+                        <img src="image/offer-1.jpeg" alt="">
+                    </div>
+                </div>
+
+                <!-- RIGHT TEXT -->
+                <div class="right-text" data-aos="fade-left">
+                    <div class="text-wrapper">
+                        <span class="line"></span>
+                        <h2>Handloom Excellence</h2>
+                        <p>
+                            At <strong>Mamta Saree</strong>, every handloom piece is a reflection of India’s rich
+                            heritage and
+                            craftsmanship. Woven by skilled artisans, our sarees combine tradition with modern elegance,
+                            offering unmatched comfort, premium quality fabric, and timeless designs perfect for every
+                            occasion.
+                        </p>
+                        <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Handloom%20Sarees">
+                            Explore Collection →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- BOTTOM TEXT -->
+                <div class="bottom-text" data-aos="fade-up">
                     <span class="line"></span>
-                    <h2>Handloom Excellence</h2>
+                    <h2>Traditional Luxury</h2>
                     <p>
-                        At <strong>Mamta Saree</strong>, every handloom piece is a reflection of India’s rich heritage and
-                        craftsmanship. Woven by skilled artisans, our sarees combine tradition with modern elegance,
-                        offering unmatched comfort, premium quality fabric, and timeless designs perfect for every
-                        occasion.
+                        Discover the elegance of <strong>Mamta Saree’s</strong> traditional collection, where luxurious
+                        fabrics
+                        meet intricate detailing. Designed for weddings, festive celebrations, and special moments, each
+                        saree reflects grace, sophistication, and premium craftsmanship that enhances your timeless
+                        beauty.
                     </p>
-                    <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Handloom%20Sarees">
+                    <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Traditional%20Sarees">
                         Explore Collection →
                     </a>
                 </div>
-            </div>
 
-            <!-- BOTTOM TEXT -->
-            <div class="bottom-text" data-aos="fade-up">
-                <span class="line"></span>
-                <h2>Traditional Luxury</h2>
-                <p>
-                    Discover the elegance of <strong>Mamta Saree’s</strong> traditional collection, where luxurious fabrics
-                    meet intricate detailing. Designed for weddings, festive celebrations, and special moments, each
-                    saree reflects grace, sophistication, and premium craftsmanship that enhances your timeless beauty.
-                </p>
-                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Traditional%20Sarees">
-                    Explore Collection →
-                </a>
-            </div>
-
-            <!-- RIGHT IMAGE -->
-            <div class="right-img" data-aos="fade-left">
-                <div class="img-box">
-                    <img src="image/offer-2.jpeg" alt="">
+                <!-- RIGHT IMAGE -->
+                <div class="right-img" data-aos="fade-left">
+                    <div class="img-box">
+                        <img src="image/offer-2.jpeg" alt="">
+                    </div>
                 </div>
+
             </div>
 
         </div>
-
-    </div>
-</section>
+    </section>
 
 
     <!-- ================= CRAFTSMANSHIP SECTION ================= -->
@@ -449,7 +461,19 @@
         }
     </style>
 
+    <style>
+        /* HIGHLY ENHANCED LOOK */
+        .product-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
 
+            filter: brightness(1.15) contrast(1.15) saturate(1.35);
+
+            image-rendering: -webkit-optimize-contrast;
+            transition: all 0.4s ease;
+        }
+    </style>
 
 
     <section class="featured-section">
@@ -476,13 +500,11 @@
                     <!-- CARD 1 -->
                     <div class="product-item">
                         <div class="product-card">
-                            <span class="badge sale">SALE</span>
+                            <span class="badge sale">NEW</span>
                             <div class="product-img">
-                                <img src="image/b-1.jpeg" class="img-fluid">
+                                <img src="image/b-1.jpeg" class="img-fluid" alt="">
                             </div>
                             <div class="product-info">
-
-
                                 <div class="btn-group">
                                     <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
                                         target="_blank" class="enquiry-btn">
@@ -496,13 +518,11 @@
                     <!-- CARD 2 -->
                     <div class="product-item">
                         <div class="product-card">
-                            <span class="badge new">NEW</span>
+                            <span class="badge sale">NEW</span>
                             <div class="product-img">
-                                <img src="image/b-2.jpeg" class="img-fluid">
+                                <img src="image/b-2.jpeg" class="img-fluid" alt="">
                             </div>
                             <div class="product-info">
-
-
                                 <div class="btn-group">
                                     <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
                                         target="_blank" class="enquiry-btn">
@@ -516,13 +536,11 @@
                     <!-- CARD 3 -->
                     <div class="product-item">
                         <div class="product-card">
-                            <span class="badge sale">SALE</span>
+                            <span class="badge sale">NEW</span>
                             <div class="product-img">
-                                <img src="image/b-3.jpeg" class="img-fluid">
+                                <img src="image/b-3.jpeg" class="img-fluid" alt="">
                             </div>
                             <div class="product-info">
-
-
                                 <div class="btn-group">
                                     <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
                                         target="_blank" class="enquiry-btn">
@@ -536,27 +554,24 @@
                     <!-- CARD 4 -->
                     <div class="product-item">
                         <div class="product-card">
-
+                            <span class="badge sale">NEW</span>
                             <div class="product-img">
-                                <img src="image/b-4.jpeg" class="img-fluid" alt="Product Image">
+                                <img src="image/b-4.jpeg" class="img-fluid" alt="">
                             </div>
-
                             <div class="product-info">
                                 <div class="btn-group">
-                                    <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20this%20product"
-                                        target="_blank" rel="noopener noreferrer" class="enquiry-btn">
+                                    <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
+                                        target="_blank" class="enquiry-btn">
                                         Enquiry Now
                                     </a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
-
-
                 </div>
             </div>
+
 
         </div>
     </section>
@@ -586,14 +601,15 @@
                     <!-- CARD 1 -->
                     <div class="product-item">
                         <div class="product-card">
-                            <span class="badge sale">SALE</span>
+                            <span class="badge sale">NEW</span>
                             <div class="product-img">
                                 <img src="image/p-1.jpeg" class="img-fluid" alt="">
                             </div>
                             <div class="product-info">
-                                <h5>Party Wear Collection</h5>
-                                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Party%20Wear%20Collection"
-                                    target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
+                                <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
+                                    target="_blank" class="enquiry-btn">
+                                    Enquiry Now
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -601,14 +617,15 @@
                     <!-- CARD 2 -->
                     <div class="product-item">
                         <div class="product-card">
-                            <span class="badge new">NEW</span>
+                            <span class="badge sale">NEW</span>
                             <div class="product-img">
                                 <img src="image/p-2.jpeg" class="img-fluid" alt="">
                             </div>
                             <div class="product-info">
-                                <h5>Party Wear Collection</h5>
-                                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Party%20Wear%20Collection"
-                                    target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
+                                <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
+                                    target="_blank" class="enquiry-btn">
+                                    Enquiry Now
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -616,14 +633,15 @@
                     <!-- CARD 3 -->
                     <div class="product-item">
                         <div class="product-card">
-                            <span class="badge sale">SALE</span>
+                            <span class="badge sale">NEW</span>
                             <div class="product-img">
                                 <img src="image/p-3.jpeg" class="img-fluid" alt="">
                             </div>
                             <div class="product-info">
-                                <h5>Party Wear Collection</h5>
-                                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Party%20Wear%20Collection"
-                                    target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
+                                <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
+                                    target="_blank" class="enquiry-btn">
+                                    Enquiry Now
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -631,18 +649,18 @@
                     <!-- CARD 4 -->
                     <div class="product-item">
                         <div class="product-card">
+                            <span class="badge sale">NEW</span>
                             <div class="product-img">
-                                <img src="image/s4.png" class="img-fluid" alt="">
+                                <img src="image/p-4.png" class="img-fluid" alt="">
                             </div>
                             <div class="product-info">
-                                <h5>Party Wear Collection</h5>
-                                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Party%20Wear%20Collection"
-                                    target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
+                                <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
+                                    target="_blank" class="enquiry-btn">
+                                    Enquiry Now
+                                </a>
                             </div>
                         </div>
                     </div>
-
-
 
                 </div>
             </div>
@@ -660,7 +678,7 @@
 
                 <div>
 
-                    <h2 class="section-title">Stich & Unstich Suit</h2>
+                    <h2 class="section-title">stitched & unstitched Suit</h2>
                     <p class="section-subtitle">
                         Explore our stylish stitched & unstitched suits crafted for comfort and elegance.
                     </p>
@@ -676,14 +694,15 @@
                     <!-- CARD 1 -->
                     <div class="product-item">
                         <div class="product-card">
-                            <span class="badge sale">SALE</span>
+                            <span class="badge sale">NEW</span>
                             <div class="product-img">
                                 <img src="image/sns-1.jpeg" class="img-fluid" alt="">
                             </div>
                             <div class="product-info">
-                                <h5>Stitched & Unstitched Suits</h5>
-                                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Stitched%20%26%20Unstitched%20Suits"
-                                    target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
+                                <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
+                                    target="_blank" class="enquiry-btn">
+                                    Enquiry Now
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -691,14 +710,15 @@
                     <!-- CARD 2 -->
                     <div class="product-item">
                         <div class="product-card">
-                            <span class="badge new">NEW</span>
+                            <span class="badge sale">NEW</span>
                             <div class="product-img">
                                 <img src="image/sns-2.jpeg" class="img-fluid" alt="">
                             </div>
                             <div class="product-info">
-                                <h5>Stitched & Unstitched Suits</h5>
-                                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Stitched%20%26%20Unstitched%20Suits"
-                                    target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
+                                <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
+                                    target="_blank" class="enquiry-btn">
+                                    Enquiry Now
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -706,14 +726,15 @@
                     <!-- CARD 3 -->
                     <div class="product-item">
                         <div class="product-card">
-                            <span class="badge sale">SALE</span>
+                            <span class="badge sale">NEW</span>
                             <div class="product-img">
                                 <img src="image/sns-3.jpeg" class="img-fluid" alt="">
                             </div>
                             <div class="product-info">
-                                <h5>Stitched & Unstitched Suits</h5>
-                                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Stitched%20%26%20Unstitched%20Suits"
-                                    target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
+                                <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
+                                    target="_blank" class="enquiry-btn">
+                                    Enquiry Now
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -721,13 +742,15 @@
                     <!-- CARD 4 -->
                     <div class="product-item">
                         <div class="product-card">
+                            <span class="badge sale">NEW</span>
                             <div class="product-img">
                                 <img src="image/sns-4.jpeg" class="img-fluid" alt="">
                             </div>
                             <div class="product-info">
-                                <h5>Stitched & Unstitched Suits</h5>
-                                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Stitched%20%26%20Unstitched%20Suits"
-                                    target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
+                                <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
+                                    target="_blank" class="enquiry-btn">
+                                    Enquiry Now
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -738,360 +761,375 @@
         </div>
     </section>
 
-   <section class="featured-section">
-    <div class="container">
+    <section class="featured-section">
+        <div class="container">
 
-        <!-- Header -->
-        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+            <!-- Header -->
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
 
-            <div>
+                <div>
 
-                <h2 class="section-title">Pure Silk Saree</h2>
-                <p class="section-subtitle">
-                    Experience the timeless elegance of luxurious pure silk sarees.
-                </p>
+                    <h2 class="section-title">Pure Silk Saree</h2>
+                    <p class="section-subtitle">
+                        Experience the timeless elegance of luxurious pure silk sarees.
+                    </p>
+                </div>
+                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Pure%20Silk%20Sarees"
+                    class="view-btn">View All Collection →</a>
             </div>
-            <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Pure%20Silk%20Sarees"
-                class="view-btn">View All Collection →</a>
+
+            <!-- SCROLL WRAPPER -->
+            <div class="product-scroll">
+                <div class="d-flex gap-4">
+
+                    <!-- CARD 1 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <span class="badge sale">NEW</span>
+                            <div class="product-img">
+                                <img src="image/ps-1.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="product-info">
+                                <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
+                                    target="_blank" class="enquiry-btn">
+                                    Enquiry Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <span class="badge sale">NEW</span>
+                            <div class="product-img">
+                                <img src="image/ps-2.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="product-info">
+                                <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
+                                    target="_blank" class="enquiry-btn">
+                                    Enquiry Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <span class="badge sale">NEW</span>
+                            <div class="product-img">
+                                <img src="image/ps-3.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="product-info">
+                                <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
+                                    target="_blank" class="enquiry-btn">
+                                    Enquiry Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <span class="badge sale">NEW</span>
+                            <div class="product-img">
+                                <img src="image/ps-4.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="product-info">
+                                <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20more%20details."
+                                    target="_blank" class="enquiry-btn">
+                                    Enquiry Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <!-- Engagement & Reception Dresses  -->
+        <div class="container">
+
+            <!-- Header -->
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+
+                <div>
+
+                    <h2 class="section-title">Engagement & Reception Dresses </h2>
+                    <p class="section-subtitle">
+                        Explore our elegant engagement & reception dresses designed to make every special moment
+                        unforgettable.
+                    </p>
+                </div>
+                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Engagement%20%26%20Reception%20Dresses"
+                    class="view-btn">View All Collection →</a>
+            </div>
+
+            <!-- SCROLL WRAPPER -->
+            <div class="product-scroll">
+    <div class="d-flex gap-4">
+
+        <!-- CARD 1 -->
+        <div class="product-item">
+            <div class="product-card">
+                <span class="badge sale">NEW</span>
+                <div class="product-img">
+                    <img src="image/sns-1.jpeg" class="img-fluid" alt="Saree Collection">
+                </div>
+                <div class="product-info">
+                    <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20details."
+                       target="_blank" class="enquiry-btn">
+                       Enquiry Now
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <!-- SCROLL WRAPPER -->
-        <div class="product-scroll">
-            <div class="d-flex gap-4">
-
-                <!-- CARD 1 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <span class="badge sale">SALE</span>
-                        <div class="product-img">
-                            <img src="image/ps-1.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="product-info">
-                            <p>Experience the timeless elegance of luxurious pure silk sarees.</p>
-                            <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Pure%20Silk%20Sarees"
-                                target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                        </div>
-                    </div>
+        <!-- CARD 2 -->
+        <div class="product-item">
+            <div class="product-card">
+                <span class="badge sale">NEW</span>
+                <div class="product-img">
+                    <img src="image/sns-2.jpeg" class="img-fluid" alt="Saree Collection">
                 </div>
-
-                <!-- CARD 2 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <span class="badge new">NEW</span>
-                        <div class="product-img">
-                            <img src="image/ps-2.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="product-info">
-                            <p>Discover premium pure silk sarees crafted for elegance and grace.</p>
-                            <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Pure%20Silk%20Sarees"
-                                target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                        </div>
-                    </div>
+                <div class="product-info">
+                    <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20details."
+                       target="_blank" class="enquiry-btn">
+                       Enquiry Now
+                    </a>
                 </div>
+            </div>
+        </div>
 
-                <!-- CARD 3 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <span class="badge sale">SALE</span>
-                        <div class="product-img">
-                            <img src="image/ps-3.jpeg" class="img-fluid" alt="">
-                        </div>
-                        <div class="product-info">
-                            <p>Elegant pure silk sarees perfect for weddings and special occasions.</p>
-                            <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Pure%20Silk%20Sarees"
-                                target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                        </div>
-                    </div>
+        <!-- CARD 3 -->
+        <div class="product-item">
+            <div class="product-card">
+                <span class="badge sale">NEW</span>
+                <div class="product-img">
+                    <img src="image/sns-3.jpeg" class="img-fluid" alt="Saree Collection">
                 </div>
-
-                <!-- CARD 4 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="image/ps-4.jpeg" class="img-fluid" alt="">
-                        </div>
-                        <div class="product-info">
-                            <p>Indulge in the richness of beautifully designed pure silk sarees.</p>
-                            <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Pure%20Silk%20Sarees"
-                                target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                        </div>
-                    </div>
+                <div class="product-info">
+                    <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20details."
+                       target="_blank" class="enquiry-btn">
+                       Enquiry Now
+                    </a>
                 </div>
+            </div>
+        </div>
 
+        <!-- CARD 4 -->
+        <div class="product-item">
+            <div class="product-card">
+                <span class="badge sale">NEW</span>
+                <div class="product-img">
+                    <img src="image/sns-4.jpeg" class="img-fluid" alt="Saree Collection">
+                </div>
+                <div class="product-info">
+                    <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20details."
+                       target="_blank" class="enquiry-btn">
+                       Enquiry Now
+                    </a>
+                </div>
             </div>
         </div>
 
     </div>
-</section>
-
-<section class="featured-section">
-    <!-- Engagement & Reception Dresses  -->
-    <div class="container">
-
-        <!-- Header -->
-        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
-
-            <div>
-
-                <h2 class="section-title">Engagement & Reception Dresses </h2>
-                <p class="section-subtitle">
-                    Explore our elegant engagement & reception dresses designed to make every special moment
-                    unforgettable.
-                </p>
-            </div>
-            <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Engagement%20%26%20Reception%20Dresses"
-                class="view-btn">View All Collection →</a>
-        </div>
-
-        <!-- SCROLL WRAPPER -->
-        <div class="product-scroll">
-            <div class="d-flex gap-4">
-
-                <!-- CARD 1 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <span class="badge sale">SALE</span>
-                        <div class="product-img">
-                            <img src="image/en-1.jpeg" class="img-fluid" alt="">
-                        </div>
-                        <div class="product-info">
-                            <p>Explore elegant engagement & reception dresses designed for unforgettable moments.
-                            </p>
-                            <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Engagement%20%26%20Reception%20Dresses"
-                                target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 2 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <span class="badge new">NEW</span>
-                        <div class="product-img">
-                            <img src="image/en-2.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="product-info">
-                            <p>Discover beautifully crafted dresses for engagement and reception celebrations.</p>
-                            <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Engagement%20%26%20Reception%20Dresses"
-                                target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 3 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <span class="badge sale">SALE</span>
-                        <div class="product-img">
-                            <img src="image/en-3.jpeg" class="img-fluid" alt="">
-                        </div>
-                        <div class="product-info">
-                            <p>Stylish engagement & reception dresses crafted with elegance and grace.</p>
-                            <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Engagement%20%26%20Reception%20Dresses"
-                                target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 4 -->
-                <div class="product-item">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="image/en-4.jpeg" class="img-fluid" alt="">
-                        </div>
-                        <div class="product-info">
-                            <p>Premium dresses perfect for engagement and reception occasions.</p>
-                            <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Engagement%20%26%20Reception%20Dresses"
-                                target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-
-
-
-
-
-    </div>
-</section>
-
-<section class="featured-section">
-    <!-- Best Gifting Collection -->
-    <div class="container">
-
-        <!-- Header -->
-        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
-
-            <div>
-
-                <h2 class="section-title">Best Gifting Collection </h2>
-                <p class="section-subtitle">
-                    Explore Our Best Gifting Collection for Every Occasion.
-                </p>
-            </div>
-            <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Best%20Gifting%20Collection"
-                class="view-btn">View All Collection →</a>
-        </div>
-
-        <!-- SCROLL WRAPPER -->
-         <div class="product-scroll">
-            <div class="d-flex gap-4">
-
-            <!-- CARD 1 -->
-            <div class="product-item">
-                <div class="product-card">
-                    <span class="badge sale">SALE</span>
-                    <div class="product-img">
-                        <img src="image/gf-1.jpeg" class="img-fluid" alt="">
-                    </div>
-                    <div class="product-info">
-                        <p>Explore our best gifting collection perfect for every special occasion.</p>
-                        <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Best%20Gifting%20Collection"
-                            target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="product-item">
-                <div class="product-card">
-                    <span class="badge new">NEW</span>
-                    <div class="product-img">
-                        <img src="image/gf-2.jpeg" class="img-fluid" alt="">
-                    </div>
-                    <div class="product-info">
-                        <p>Discover thoughtful and stylish gifts for your loved ones.</p>
-                        <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Best%20Gifting%20Collection"
-                            target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="product-item">
-                <div class="product-card">
-                    <span class="badge sale">SALE</span>
-                    <div class="product-img">
-                        <img src="image/gf-3.jpeg" class="img-fluid" alt="">
-                    </div>
-                    <div class="product-info">
-                        <p>Premium gifting options designed to make every moment memorable.</p>
-                        <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Best%20Gifting%20Collection"
-                            target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 4 -->
-            <div class="product-item">
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="image/gf-4.jpeg" class="img-fluid" alt="">
-                    </div>
-                    <div class="product-info">
-                        <p>Elegant gifts curated for celebrations, festivals, and special moments.</p>
-                        <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Best%20Gifting%20Collection"
-                            target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                    </div>
-                </div>
-            </div>
-</div>
-        </div>
-
-
-
-
-    </div>
-</section>
-<section class="featured-section">
-
-    <div class="container">
-
-        <!-- Header -->
-        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
-
-            <div>
-
-                <h2 class="section-title">Our Happy Clients Gallery </h2>
-                <p class="section-subtitle">
-                    A glimpse of our happy clients and the beautiful moments they’ve created with us.
-                </p>
-            </div>
-            <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20your%20collection"
-                class="view-btn">View All Collection →</a>
-        </div>
-
-        <!-- SCROLL WRAPPER -->
-          <div class="product-scroll">
-        <div class="d-flex gap-4">
-
-            <!-- CARD 1 -->
-            <div class="product-item">
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="image/hc-1.jpeg" class="img-fluid" alt="">
-                    </div>
-                    <div class="product-info">
-                        <p>Real smiles and happy moments shared by our valued clients.</p>
-                        <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20your%20collection"
-                            target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="product-item">
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="image/hc-2.jpeg" class="img-fluid" alt="">
-                    </div>
-                    <div class="product-info">
-                        <p>Moments of joy captured with our beautiful designs.</p>
-                        <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20your%20collection"
-                            target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="product-item">
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="image/hc-3.jpeg" class="img-fluid" alt="">
-                    </div>
-                    <div class="product-info">
-                        <p>Our clients shining with confidence and elegance.</p>
-                        <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20your%20collection"
-                            target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 4 -->
-            <div class="product-item">
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="image/hc-4.jpeg" class="img-fluid" alt="">
-                    </div>
-                    <div class="product-info">
-                        <p>A glimpse of happiness, style, and unforgettable memories.</p>
-                        <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20your%20collection"
-                            target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
 </div>
 
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <!-- Best Gifting Collection -->
+        <div class="container">
+
+            <!-- Header -->
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+
+                <div>
+
+                    <h2 class="section-title">Best Gifting Collection </h2>
+                    <p class="section-subtitle">
+                        Explore Our Best Gifting Collection for Every Occasion.
+                    </p>
+                </div>
+                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20Best%20Gifting%20Collection"
+                    class="view-btn">View All Collection →</a>
+            </div>
+
+            <!-- SCROLL WRAPPER -->
+           <div class="product-scroll">
+    <div class="d-flex gap-4">
+
+        <!-- CARD 1 -->
+        <div class="product-item">
+            <div class="product-card">
+                <span class="badge sale">NEW</span>
+                <div class="product-img">
+                    <img src="image/gf-1.jpeg" class="img-fluid" alt="Gifting Collection">
+                </div>
+                <div class="product-info">
+                    <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20details."
+                       target="_blank" class="enquiry-btn">
+                       Enquiry Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="product-item">
+            <div class="product-card">
+                <span class="badge sale">NEW</span>
+                <div class="product-img">
+                    <img src="image/gf-2.jpeg" class="img-fluid" alt="Gifting Collection">
+                </div>
+                <div class="product-info">
+                    <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20details."
+                       target="_blank" class="enquiry-btn">
+                       Enquiry Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="product-item">
+            <div class="product-card">
+                <span class="badge sale">NEW</span>
+                <div class="product-img">
+                    <img src="image/gf-3.jpeg" class="img-fluid" alt="Gifting Collection">
+                </div>
+                <div class="product-info">
+                    <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20details."
+                       target="_blank" class="enquiry-btn">
+                       Enquiry Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="product-item">
+            <div class="product-card">
+                <span class="badge sale">NEW</span>
+                <div class="product-img">
+                    <img src="image/gf-4.jpeg" class="img-fluid" alt="Gifting Collection">
+                </div>
+                <div class="product-info">
+                    <a href="https://wa.me/919654547064?text=Hi%2C%20I%20am%20interested%20in%20this%20product.%20Please%20share%20details."
+                       target="_blank" class="enquiry-btn">
+                       Enquiry Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </div>
-</section>
+</div>
+
+
+
+
+        </div>
+    </section>
+    <section class="featured-section">
+
+        <div class="container">
+
+            <!-- Header -->
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+
+                <div>
+
+                    <h2 class="section-title">Our Happy Clients Gallery </h2>
+                    <p class="section-subtitle">
+                        A glimpse of our happy clients and the beautiful moments they’ve created with us.
+                    </p>
+                </div>
+                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20your%20collection"
+                    class="view-btn">View All Collection →</a>
+            </div>
+
+            <!-- SCROLL WRAPPER -->
+            <div class="product-scroll">
+                <div class="d-flex gap-4">
+
+                    <!-- CARD 1 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="image/hc-1.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="product-info">
+                                <p>Real smiles and happy moments shared by our valued clients.</p>
+                                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20your%20collection"
+                                    target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="image/hc-2.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="product-info">
+                                <p>Moments of joy captured with our beautiful designs.</p>
+                                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20your%20collection"
+                                    target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="image/hc-3.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="product-info">
+                                <p>Our clients shining with confidence and elegance.</p>
+                                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20your%20collection"
+                                    target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="product-item">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="image/hc-4.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="product-info">
+                                <p>A glimpse of happiness, style, and unforgettable memories.</p>
+                                <a href="https://wa.me/919654547064?text=Hi%20I%20am%20interested%20in%20your%20collection"
+                                    target="_blank" rel="noopener noreferrer" class="enquiry-btn">Enquiry Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
 
 
 
@@ -1271,7 +1309,7 @@
                 </div>
 
                 <!-- Text -->
-                <span class="rating-text">4.2 Rating</span>
+                <span class="rating-text">4.3 Rating</span>
                 <span class="divider">|</span>
                 <span class="review-count">250+ Reviews</span>
 
@@ -1500,7 +1538,7 @@
 
                         <!-- TRUST LINE -->
                         <p class="about-trust">
-                            📍 Verified Store • 4.2★ Rating • 250+ Reviews
+                            📍 Verified Store • 4.3★ Rating • 250+ Reviews
                         </p>
 
                         <!-- BUTTON -->
